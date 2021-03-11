@@ -1,0 +1,13 @@
+/* Icon */
+.icon.icon-shape {
+    width: 10rem;
+    height: 10rem;
+}
+
+.icon.icon-xl span, .icon.icon-xl svg {
+    font-size: 3.25rem; 
+}
+
+.icon.icon-xxl span, .icon.icon-xxl svg {
+    font-size: 4rem; 
+}

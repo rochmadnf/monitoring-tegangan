@@ -1,0 +1,14 @@
+{
+  "name": "monitoring-tegangan",
+  "version": "1.0.0",
+  "description": "aplikasi berbasis website yang digunakan untuk memonitoring tegangan",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rochmad Nurul Fahmi",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
+  }
+}
