@@ -11,3 +11,12 @@
 .icon.icon-xxl span, .icon.icon-xxl svg {
     font-size: 4rem; 
 }
+
+/* Text */
+.text-emerald-500{
+    color: #10B981;
+}
+
+.text-red-500{
+    color: #EF4444;
+}

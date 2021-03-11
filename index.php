@@ -32,9 +32,9 @@
                             </div>
                             <div class="icon-box text-center mb-5 mb-md-0">
                                 <div class="icon icon-shape icon-xxl bg-soft shadow-soft border border-light rounded-circle mb-3">
-                                    <span class="fas fa-battery-three-quarters text-success"></span>
+                                    <span class="fas fa-battery-quarter text-red-500"></span>
                                 </div>
-                                <h2 class="h5 my-3"><strong>75%</strong></h2>
+                                <h2 class="h5 my-3"><strong>25%</strong></h2>
                             </div>
                         </div>
                         <!-- End of Icon box -->
