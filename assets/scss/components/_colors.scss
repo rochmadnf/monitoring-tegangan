@@ -1,0 +1,22 @@
+// variabel
+$emerald-5 : #10B981;
+$red-5 : #EF4444;
+
+@mixin colors($property){
+    &-emerald-5 {
+        #{$property}: $emerald-5 !important;
+    }
+
+    &-red-5 {
+        #{$property}: $red-5 !important;
+    }
+}
+
+/* Text */
+.text {
+    @include colors("color");
+}
+
+.bg {
+    @include colors("background-color");
+}

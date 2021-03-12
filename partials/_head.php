@@ -1,7 +1,6 @@
 <?php
   // Untuk data dinamis
   $title = "Monitoring Tegangan";
-  $folder = "vendor";
   require_once('config.php');
 ?>
 

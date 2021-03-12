@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="id">
  <head>
-   <?php include("./partials/_head.php"); ?>
+   <?php include("partials/_head.php"); ?>
    <title><?= $title ?></title>
  </head>
  <body>
@@ -33,11 +33,18 @@
                             <div class="card-header">
                                 <span class="display-4 text-uppercase">Status Baterai</span>
                             </div>
-                            <div class="icon-box text-center mb-5 mb-md-0">
-                                <div class="icon icon-shape icon-2xl bg-soft shadow-soft border border-light rounded-circle mb-3">
-                                    <span class="fas fa-battery-quarter text-red-5"></span>
+                            <div class="card-body">
+                                <div class="icon-box text-center mb-5 mb-md-0">
+                                    <div class="icon icon-shape icon-2xl bg-soft shadow-soft border border-light rounded-circle mb-3">
+                                        <span id="batteryIcon" class="fas fa-battery-full text-emerald-5"></span>
+                                    </div>
+                                    <div class="progress-wrapper">
+                                        <div class="progress progress-lg">
+                                            <div id="batteryBar" class="progress-bar bg-emerald-5 progress-bar-animation" role="progressbar"></div>
+                                        </div>
+                                    </div>
+                                    <h2 class="h5"><span id="batteryPercentage">0%</span></h2>
                                 </div>
-                                <h2 class="h5 my-3"><strong>25%</strong></h2>
                             </div>
                         </div>
                         <!-- End of Icon box -->
@@ -50,11 +57,13 @@
                             <div class="card-header">
                                 <span class="display-4 text-uppercase">Tegangan</span>
                             </div>
-                            <div class="icon-box text-center mb-5 mb-md-0">
-                                <div class="icon icon-shape icon-2xl bg-soft shadow-soft border border-light rounded-circle mb-3">
-                                    <span class="fas fa-bolt text-warning"></span>
+                            <div class="card-body">
+                                <div class="icon-box text-center mb-5 mb-md-0">
+                                    <div class="icon icon-shape icon-2xl bg-soft shadow-soft border border-light rounded-circle mb-3">
+                                        <span class="fas fa-bolt text-warning"></span>
+                                    </div>
+                                    <h2 class="h5 my-3"><strong>15V</strong></h2>
                                 </div>
-                                <h2 class="h5 my-3"><strong>15V</strong></h2>
                             </div>
                         </div>
                         <!-- End of Icon box -->
@@ -68,11 +77,13 @@
                             <div class="card-header">
                                 <span class="display-4 text-uppercase">Lampu</span>
                             </div>
-                            <div class="icon-box text-center mb-5 mb-md-0">
-                                <div class="icon icon-shape icon-2xl bg-soft shadow-soft border border-light rounded-circle mb-3">
-                                    <span class="fas fa-lightbulb text-dark"></span>
+                            <div class="card-body">
+                                <div class="icon-box text-center mb-5 mb-md-0">
+                                    <div class="icon icon-shape icon-2xl bg-soft shadow-soft border border-light rounded-circle mb-3">
+                                        <span class="fas fa-lightbulb text-dark"></span>
+                                    </div>
+                                    <h2 class="h5 my-3"><strong>Padam</strong></h2>
                                 </div>
-                                <h2 class="h5 my-3"><strong>Padam</strong></h2>
                             </div>
                         </div>
                         <!-- End of Icon box -->
@@ -83,6 +94,8 @@
         </section>
     </main>
     <!-- e:main -->
+
+    <?php include("partials/_script.php");?>
 
  </body>
 </html>

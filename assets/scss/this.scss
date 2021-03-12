@@ -2,4 +2,12 @@
 @import "components/icon";
 
 // Text
-@import "components/text";
+@import "components/colors";
+
+/* Progress Bar */
+.progress-bar{
+    &-animation {
+        animation: 3s ease 0s 1 normal none running animate-positive;
+        opacity: 1;
+    }
+}
