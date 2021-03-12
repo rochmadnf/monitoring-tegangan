@@ -11,3 +11,13 @@
         opacity: 1;
     }
 }
+
+$lgS : 3rem;
+
+.section{
+    padding-top: $lgS;
+    &-lg-s {
+        padding-bottom: $lgS;
+        padding-top: $lgS;
+    }
+}

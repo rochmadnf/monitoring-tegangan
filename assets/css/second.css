@@ -31,4 +31,12 @@
   opacity: 1;
 }
 
+.section {
+  padding-top: 3rem;
+}
+.section-lg-s {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
 /*# sourceMappingURL=second.css.map */

@@ -24,7 +24,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-lg">
+        <section class="section section-lg-s">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-4 col-md-6 col-sm-8 mb-4">
