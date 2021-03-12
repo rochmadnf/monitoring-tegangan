@@ -1,14 +1,39 @@
 // variabel
-$emerald-5 : #10B981;
-$red-5 : #EF4444;
+$amber-4    : #FBBF24;
+$coolGray-8 : #1F2937;
+$emerald-5  : #10B981;
+$indigo-5   : #6366F1;
+$orange-5   : #F97316;
+$red-5      : #EF4444;
+$yellow-3   : #FDE047;
 
 @mixin colors($property){
+    &-amber-4{
+        #{$property}: $amber-4 !important;
+    }
+
+    &-coolgray-8{
+        #{$property}: $coolGray-8 !important;
+    }
+
     &-emerald-5 {
         #{$property}: $emerald-5 !important;
+    }
+    
+    &-indigo-5 {
+        #{$property}: $indigo-5 !important;
+    }
+    
+    &-orange-5 {
+        #{$property}: $orange-5 !important;
     }
 
     &-red-5 {
         #{$property}: $red-5 !important;
+    }
+
+    &-yellow-3 {
+        #{$property}: $yellow-3 !important;
     }
 }
 
@@ -17,6 +42,7 @@ $red-5 : #EF4444;
     @include colors("color");
 }
 
+/* Background Color */
 .bg {
     @include colors("background-color");
 }

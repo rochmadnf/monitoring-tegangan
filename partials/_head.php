@@ -1,6 +1,5 @@
 <?php
   // Untuk data dinamis
-  $title = "Monitoring Tegangan";
   require_once('config.php');
 ?>
 
@@ -13,4 +12,6 @@
     <link type="text/css" href="<?=$base_url.$folder?>/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link type="text/css" href="<?=$base_url;?>assets/css/neumorphism.css" rel="stylesheet">
     <link type="text/css" href="<?=$base_url;?>assets/css/second.css" rel="stylesheet">
+
+    <title><?=SITE_TITLE?></title>
 

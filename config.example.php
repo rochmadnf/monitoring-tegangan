@@ -5,6 +5,10 @@
 
     $folder = "vendor";
 
+    // Core
+    define("SITE_TITLE", "YOUR_SITE_TITLE");
+
+    // Komunikasi Web dan Antares.id
     define("URL_ANTARES", "YOUR_URL");
     define("API_KEY_ANTARES", "YOUR_API_KEY");
     define("URL_GET_DATA", "YOUR_URL");

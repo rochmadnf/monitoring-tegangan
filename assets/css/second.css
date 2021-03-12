@@ -11,18 +11,49 @@
 }
 
 /* Text */
+.text-amber-4 {
+  color: #FBBF24 !important;
+}
+.text-coolgray-8 {
+  color: #1F2937 !important;
+}
 .text-emerald-5 {
   color: #10B981 !important;
+}
+.text-indigo-5 {
+  color: #6366F1 !important;
+}
+.text-orange-5 {
+  color: #F97316 !important;
 }
 .text-red-5 {
   color: #EF4444 !important;
 }
+.text-yellow-3 {
+  color: #FDE047 !important;
+}
 
+/* Background Color */
+.bg-amber-4 {
+  background-color: #FBBF24 !important;
+}
+.bg-coolgray-8 {
+  background-color: #1F2937 !important;
+}
 .bg-emerald-5 {
   background-color: #10B981 !important;
 }
+.bg-indigo-5 {
+  background-color: #6366F1 !important;
+}
+.bg-orange-5 {
+  background-color: #F97316 !important;
+}
 .bg-red-5 {
   background-color: #EF4444 !important;
+}
+.bg-yellow-3 {
+  background-color: #FDE047 !important;
 }
 
 /* Progress Bar */
