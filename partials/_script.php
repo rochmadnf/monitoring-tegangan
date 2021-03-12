@@ -15,4 +15,29 @@
 
   let batteryPercentage = $('#batteryPercentage');
   batteryPercentage.text("100%");
+
+  function loadDoc() {
+      setInterval(function() {
+        let data;
+        let batteryBar = $('#batteryBar');
+        let batteryPercentage = $('#batteryPercentage');
+
+        var data = JSON.stringify({});
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function() {
+          if (this.readyState === 4) {
+            data = this.response.split("-");
+            console.log(data);
+            // $('#loadingInfo').remove();
+          }
+        });
+
+        xhr.open("GET", URL_GET_DATA);
+        xhr.send(data);
+      }, 10000);
+    }
+    loadDoc();
 </script>
