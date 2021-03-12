@@ -9,7 +9,7 @@ if(is_dir('vendor')){
 }
 
 function makeVendor(){
-    shell_exec('npm install');
+    shell_exec('npm installl; composer update');
     shell_exec('mv node_modules vendor');
     echo "Done. Your Awesome";
 }
