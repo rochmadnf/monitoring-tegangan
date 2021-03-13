@@ -11,4 +11,4 @@
     // Komunikasi Web dan Antares.id
     define("URL_ANTARES", "YOUR_URL");
     define("API_KEY_ANTARES", "YOUR_API_KEY");
-    define("URL_GET_DATA", "YOUR_URL");
+    define("URL_GET_DATA", $base_url."getData.php");
