@@ -4,7 +4,9 @@
 <!DOCTYPE html>
 <html lang="id">
  <head>
-   <?php include("partials/_head.php"); ?>
+   <?php include("partials/_head.php"); 
+   $title = explode(" ", SITE_TITLE);
+   ?>
  </head>
  <body>
 
@@ -14,19 +16,30 @@
         <section class="section section bg-soft pb-3 overflow-hidden z-2">
             <div class="container z-2">
                 <div class="row justify-content-center text-center pt-3">
-                    <div class="col-lg-8 col-xl-8">
-                        <h1 class="display-2 font-weight-bold mb-2">
-                            <?= SITE_TITLE ?>
-                        </h1>
-                        <button class="btn btn-primary" id="loadingInfo" type="button" disabled="disabled">
-                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">
-                            </span> <span class="ml-1">Mohon tunggu, memuat data....</span>
-                        </button>
+                    <div class="col-lg-11 col-xl-11">
+                        <div class="card bg-primary shadow-soft border-light px-4 py-1 mb-6">
+                            <div class="card-header">
+                                <h1 class="display-2 mb-3 text-uppercase text-coolgray-8 font-weight-light"><?= $title[0]?> <span class="text-blue-4"><?= $title[1]?></h1>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 mx-auto">
+                                        <img class="mx-auto" src="<?=$base_url?>assets/images/monitoring.svg" alt="illustration" id="illustration">
+                                    </div>
+                                </div>
+                                <div class="row" id="loadingInfo">
+                                    <button class="btn btn-primary btn-lg mx-auto mt-3" type="button" disabled="disabled">
+                                        <span class="spinner-border" role="status" aria-hidden="true"></span>
+                                        <span class="ml-1">Mohon tunggu, memuat data....</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section section-lg-s">
+        <section class="section section-lg-s" id="displayData">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-4 col-md-6 col-sm-8 mb-4">

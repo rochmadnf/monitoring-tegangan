@@ -14,6 +14,9 @@
 .text-amber-4 {
   color: #FBBF24 !important;
 }
+.text-blue-4 {
+  color: #60A5FA !important;
+}
 .text-coolgray-8 {
   color: #1F2937 !important;
 }
@@ -36,6 +39,9 @@
 /* Background Color */
 .bg-amber-4 {
   background-color: #FBBF24 !important;
+}
+.bg-blue-4 {
+  background-color: #60A5FA !important;
 }
 .bg-coolgray-8 {
   background-color: #1F2937 !important;

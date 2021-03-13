@@ -1,5 +1,6 @@
 // variabel
 $amber-4    : #FBBF24;
+$blue-4     : #60A5FA;
 $coolGray-8 : #1F2937;
 $emerald-5  : #10B981;
 $indigo-5   : #6366F1;
@@ -10,6 +11,10 @@ $yellow-3   : #FDE047;
 @mixin colors($property){
     &-amber-4{
         #{$property}: $amber-4 !important;
+    }
+    
+    &-blue-4{
+        #{$property}: $blue-4 !important;
     }
 
     &-coolgray-8{

@@ -19,6 +19,9 @@
   let lampIcon = $('#lampIcon');
   let lampLabel = $('#lampLabel > strong');
 
+  let scroll = 0;
+  let illustration = $('#illustration');
+
   function loadDoc() {
       setInterval(function() {
         let dataAntares;
@@ -35,6 +38,10 @@
             baterai(dataAntares[0]);
             tegangan(dataAntares[1]);
             lampu(dataAntares[2]);
+            if (scroll == 0) {
+              window.scrollTo(0, 500);
+              scroll = 1;
+            }
           }
         });
 
