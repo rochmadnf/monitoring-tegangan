@@ -38,6 +38,7 @@
             baterai(dataAntares[0]);
             tegangan(dataAntares[1]);
             lampu(dataAntares[2]);
+            $("#dateTime").text(dataAntares[3]);
             if (scroll == 0) {
               window.scrollTo(0, 500);
               scroll = 1;

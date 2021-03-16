@@ -15,10 +15,12 @@ $client = new Client();
 $response = $client->get(URL_ANTARES, ['headers' => $headers])->getBody()->getContents();
 $data = json_decode($response, TRUE);
 $data1 = json_decode($data['m2m:cin']['con'], TRUE);
-$basket = "";
 
-foreach ($data1 as $d) {
-  $basket .= $d . "-";
-}
-echo $basket;
-// print_r($data1);
+$date = date("d", $data1["currTime"]);
+$month = $months[date("n", $data1["currTime"]) - 1];
+$timeStamp = date("Y H:i:s", $data1["currTime"]);
+
+$data1["currTime"] = "$date $month $timeStamp";
+
+echo join($data1, "-");
+

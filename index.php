@@ -39,6 +39,20 @@
                 </div>
             </div>
         </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="alert alert-secondary shadow-soft mx-auto" role="alert">
+                    <span class="alert-inner--icon">
+                        <span class="fas fa-database text-blue-4"></span>
+                    </span>
+
+                    <span class="alert-inner--text text-coolgray-8">
+                        <strong>Data</strong> terakhir&colon; <strong id="dateTime">-</strong></span>
+                </div>
+            </div>
+        </div>
+
         <section class="section section-lg-s" id="displayData">
             <div class="container">
                 <div class="row justify-content-center">

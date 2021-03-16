@@ -4,7 +4,22 @@
     $base_url .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 
     $folder = "vendor";
-
+    
+    $months = [
+        "Januari",
+        "Februari",
+        "Maret",
+        "April",
+        "Mei",
+        "Juni",
+        "Juli",
+        "Agustus",
+        "September",
+        "Oktober",
+        "November",
+        "Desember"
+    ];
+    
     // Core
     define("SITE_TITLE", "YOUR_SITE_TITLE");
 
